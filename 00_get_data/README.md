@@ -1,11 +1,6 @@
 # Get the Data
 
-In the ``apebase`` directory, all 10,000 ape images are stored as PNGs in the ``ipfs`` directory.
-
-If you want to convert them to JPEGs, first, use a simple bash command similar to:
-
+run the bash script to download the bored ape pngs to the data directory
 ```bash
-for i in *.png ; do convert "$i" "${i%.*}.jpg" ; done
+download_apes.sh ../data/bored_apes
 ```
-
-Good luck!
